@@ -64,7 +64,7 @@ int fifthRandomNumber = randomGenerator.Next(0, 26);
 if (thirdRandomNumber > 0 || fourthRandomNumber > 0 || fifthRandomNumber > 0)
 {
     int averageNumber = (thirdRandomNumber + fourthRandomNumber + fifthRandomNumber) / 3;
-    Console.WriteLine($"The middle value is: {(thirdRandomNumber + fourthRandomNumber + fifthRandomNumber) / 3}");
+    Console.WriteLine($"The middle value is: {averageNumber}");
 } else
 {
     Console.WriteLine("All your numbers are 0, you can't divide on 0!");
@@ -210,3 +210,44 @@ while (clockNumber >= 60)
 }
 
 Console.WriteLine($"New time is - {hours} hours {minutes} minutes {seconds} seconds");
+
+// Average temperature exercise
+Console.Write("Monday temperature: ");
+int monday = int.Parse(Console.ReadLine());
+Console.Write("Tuesday temperature: ");
+int tuesday = int.Parse(Console.ReadLine());
+Console.Write("Wednesday temperature: ");
+int wednesday = int.Parse(Console.ReadLine());
+Console.Write("Thursday temperature: ");
+int thursday = int.Parse(Console.ReadLine());
+Console.Write("Friday temperature: ");
+int friday = int.Parse(Console.ReadLine());
+Console.Write("Saturday temperature: ");
+int saturday = int.Parse(Console.ReadLine());
+Console.Write("Sunday temperature: ");
+int sunday = int.Parse(Console.ReadLine());
+
+Console.Write("Weekly average temperature is: ");
+double avgTemp = (monday + tuesday + wednesday + thursday + friday + saturday + sunday) / 7;
+Console.WriteLine(avgTemp);
+
+// Calculating the price with VAT
+
+Console.Write("Initial price: ");
+double initialPrice = double.Parse(Console.ReadLine());
+Console.Write("VAT percentage: ");
+double vatPercentage = double.Parse(Console.ReadLine());
+double vatAmount = initialPrice * (vatPercentage / 100);
+double totalPrice = initialPrice + vatAmount;
+
+Console.WriteLine($"Your price with VAT: {totalPrice}");
+
+// BMI calculator
+
+Console.Write("Enter your weight: ");
+double weight = double.Parse(Console.ReadLine());
+Console.Write("Enter your height: ");
+double height = double.Parse(Console.ReadLine());
+
+double bmi = weight / (height * height);
+Console.Write($"Your BMI is: {bmi}");
