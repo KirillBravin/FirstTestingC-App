@@ -213,19 +213,19 @@ Console.WriteLine($"New time is - {hours} hours {minutes} minutes {seconds} seco
 
 // Average temperature exercise
 Console.Write("Monday temperature: ");
-int monday = int.Parse(Console.ReadLine());
+double monday = double.Parse(Console.ReadLine());
 Console.Write("Tuesday temperature: ");
-int tuesday = int.Parse(Console.ReadLine());
+double tuesday = double.Parse(Console.ReadLine());
 Console.Write("Wednesday temperature: ");
-int wednesday = int.Parse(Console.ReadLine());
+double wednesday = double.Parse(Console.ReadLine());
 Console.Write("Thursday temperature: ");
-int thursday = int.Parse(Console.ReadLine());
+double thursday = double.Parse(Console.ReadLine());
 Console.Write("Friday temperature: ");
-int friday = int.Parse(Console.ReadLine());
+double friday = double.Parse(Console.ReadLine());
 Console.Write("Saturday temperature: ");
-int saturday = int.Parse(Console.ReadLine());
+double saturday = double.Parse(Console.ReadLine());
 Console.Write("Sunday temperature: ");
-int sunday = int.Parse(Console.ReadLine());
+double sunday = double.Parse(Console.ReadLine());
 
 Console.Write("Weekly average temperature is: ");
 double avgTemp = (monday + tuesday + wednesday + thursday + friday + saturday + sunday) / 7;
