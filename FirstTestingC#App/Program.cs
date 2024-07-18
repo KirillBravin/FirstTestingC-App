@@ -210,5 +210,3 @@ while (clockNumber >= 60)
 }
 
 Console.WriteLine($"New time is - {hours} hours {minutes} minutes {seconds} seconds");
-
-// Extra exercise 10 - no idea how to do it optimally without 100 if statements and not using loopss
